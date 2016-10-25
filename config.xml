@@ -1,124 +1,111 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;\csgray\c100000;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl280\partightenfactor0
+<?xml version="1.0" encoding="UTF-8"?>
 
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-<?xml version="1.0" encoding="UTF-8"?>\
-\
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->\
-<widget xmlns \'a0 \'a0 = "http://www.w3.org/ns/widgets"\
-\'a0 \'a0 \'a0 \'a0 xmlns:gap = "http://phonegap.com/ns/1.0"\
-\'a0 \'a0 \'a0 \'a0 id \'a0 \'a0 \'a0 \'a0= "com.phonegap.helloworld"\
-\'a0 \'a0 \'a0 \'a0 version \'a0 = "1.0.0">\
-\
-\'a0 \'a0 <name>Tunes on Violin</name>\
-\
-\'a0 \'a0 <description>\
-\'a0 \'a0 \'a0 \'a0 This is an Musical App.\
-\'a0 \'a0 </description>\
-\
-\'a0 \'a0 <author href="http://phonegap.com" email="wasura.ediri@gmail.com">\
-\'a0 \'a0 \'a0 \'a0 KPGS Team\
-\'a0 \'a0 </author>\
-\
-\'a0 \'a0 <!--\
-\'a0 \'a0 \'a0 \'a0 If you do not want any permissions to be added to your app, add the\
-\'a0 \'a0 \'a0 \'a0 following tag to your config.xml; you will still have the INTERNET\
-\'a0 \'a0 \'a0 \'a0 permission on your app, which PhoneGap requires.\
-\'a0 \'a0 -->\
-\'a0 \'a0 <preference name="permissions" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="none"/>\
-\
-\'a0 \'a0 <!-- Customize your app and platform with the preference element. -->\
-\'a0 \'a0 <preference name="orientation" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="portrait" /> \'a0 \'a0 \'a0 \'a0<!-- all: default means both landscape and portrait are enabled -->\
-\'a0 \'a0 <preference name="target-device" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="universal" /> \'a0 \'a0 \'a0<!-- all: possible values handset, tablet, or universal -->\
-\'a0 \'a0 <preference name="fullscreen" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- all: hides the status bar at the top of the screen -->\
-\'a0 \'a0 <preference name="webviewbounce" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->\
-\'a0 \'a0 <preference name="prerendered-icon" \'a0 \'a0 \'a0 \'a0 \'a0 value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->\
-\'a0 \'a0 <preference name="stay-in-webview" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="false" /> \'a0 \'a0 \'a0 \'a0 \'a0<!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->\
-\'a0 \'a0 <preference name="ios-statusbarstyle" \'a0 \'a0 \'a0 \'a0 value="black-opaque" /> \'a0 <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->\
-\'a0 \'a0 <preference name="detect-data-types" \'a0 \'a0 \'a0 \'a0 \'a0value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->\
-\'a0 \'a0 <preference name="exit-on-suspend" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0value="false" /> \'a0 \'a0 \'a0 \'a0 \'a0<!-- ios: if set to true, app will terminate when home button is pressed -->\
-\'a0 \'a0 <preference name="show-splash-screen-spinner" value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->\
-\'a0 \'a0 <preference name="auto-hide-splash-screen" \'a0 \'a0value="true" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->\
-\'a0 \'a0 <preference name="disable-cursor" \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 value="false" /> \'a0 \'a0 \'a0 \'a0 \'a0<!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->\
-\'a0 \'a0 <preference name="android-installLocation" \'a0 \'a0value="auto" /> \'a0 \'a0 \'a0 \'a0 \'a0 <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->\
-\'a0 \'a0 <!--\
-\'a0 \'a0 \'a0 \'a0 Define a specific version of PhoneGap to build into your app.\
-\'a0 \'a0 \'a0 \'a0 <preference name="phonegap-version" \'a0 \'a0 \'a0 value="3.5.0" />\
-\'a0 \'a0 -->\
-\
-\'a0 \'a0 <!-- Plugins -->\
-\
-\'a0 \'a0 <!-- Core plugins -->\
-\'a0 \'a0 <plugin name="cordova-plugin-battery-status" />\
-\'a0 \'a0 <plugin name="cordova-plugin-camera" />\
-\'a0 \'a0 <plugin name="cordova-plugin-media-capture" />\
-\'a0 \'a0 <plugin name="cordova-plugin-console" />\
-\'a0 \'a0 <plugin name="cordova-plugin-contacts" />\
-\'a0 \'a0 <plugin name="cordova-plugin-device" />\
-\'a0 \'a0 <plugin name="cordova-plugin-device-motion" />\
-\'a0 \'a0 <plugin name="cordova-plugin-device-orientation" />\
-\'a0 \'a0 <plugin name="cordova-plugin-dialogs" />\
-\'a0 \'a0 <plugin name="cordova-plugin-file" />\
-\'a0 \'a0 <plugin name="cordova-plugin-file-transfer" />\
-\'a0 \'a0 <plugin name="cordova-plugin-geolocation" />\
-\'a0 \'a0 <plugin name="cordova-plugin-globalization" />\
-\'a0 \'a0 <plugin name="cordova-plugin-inappbrowser" />\
-\'a0 \'a0 <plugin name="cordova-plugin-media" />\
-\'a0 \'a0 <plugin name="cordova-plugin-network-information" />\
-\'a0 \'a0 <plugin name="cordova-plugin-splashscreen" />\
-\'a0 \'a0 <plugin name="cordova-plugin-vibration" />\
-\
-\'a0 \'a0 <!-- Third party plugins -->\
-\'a0 \'a0 <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->\
-\'a0 \'a0 <!--\
-\'a0 \'a0 \'a0 \'a0 <plugin name="com.phonegap.plugins.barcodescanner" />\
-\'a0 \'a0 -->\
-\
-\'a0 \'a0 <!-- Define app icon for each platform. -->\
-\'a0 \'a0 <icon src="icon.png" />\
-\
-\'a0 \'a0 <!-- Define app splash screen for each platform. -->\
-\'a0 \'a0 \'a0 gap:platform="winphone" />\
-\
-\'a0 \'a0 <gap:config-file platform="ios" parent="CFBundleShortVersionString">\
-\'a0 \'a0 <string>100</string>\
-\'a0 \'a0 </gap:config-file>\
-\
-\'a0 \'a0 <!--\
-\'a0 \'a0 \'a0 \'a0 Define access to external domains.\
-\
-\'a0 \'a0 \'a0 \'a0 <access /> \'a0 \'a0 \'a0 \'a0 \'a0 \'a0- a blank access tag denies access to all external resources.\
-\'a0 \'a0 \'a0 \'a0 <access origin="*" /> - a wildcard access tag allows access to all external resource.\
-\
-\'a0 \'a0 \'a0 \'a0 Otherwise, you can specify specific domains:\
-\
-\'a0 \'a0 \'a0 \'a0 <access origin="http://phonegap.com" /> \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0- allow any secure requests to http://phonegap.com/\
-\'a0 \'a0 \'a0 \'a0 <access origin="http://phonegap.com" subdomains="true" /> \'a0- same as above, but including subdomains, such as http://build.phonegap.com/\
-\'a0 \'a0 \'a0 \'a0 <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.\
-\'a0 \'a0 -->\
-\
-\'a0 \'a0 <access origin="*"/>\
-\'a0 \'a0 <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->\
-\'a0 \'a0 <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->\
-\'a0 \'a0 <plugin name="cordova-plugin-whitelist" version="1" />\
-\'a0 \'a0 <allow-intent href="http://*/*" />\
-\'a0 \'a0 <allow-intent href="https://*/*" />\
-\'a0 \'a0 <allow-intent href="tel:*" />\
-\'a0 \'a0 <allow-intent href="sms:*" />\
-\'a0 \'a0 <allow-intent href="mailto:*" />\
-\'a0 \'a0 <allow-intent href="geo:*" />\
-\'a0 \'a0 <platform name="android">\
-\'a0 \'a0 \'a0 \'a0 <allow-intent href="market:*" />\
-\'a0 \'a0 </platform>\
-\'a0 \'a0 <platform name="ios">\
-\'a0 \'a0 \'a0 \'a0 <allow-intent href="itms:*" />\
-\'a0 \'a0 \'a0 \'a0 <allow-intent href="itms-apps:*" />\
-\'a0 \'a0 </platform>\
-\
-</widget>\
-}
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.helloworld"
+        version   = "1.0.0">
+
+    <name>Tunes</name>
+
+    <description>
+        Violin Instrumentals of Wasu
+    </description>
+
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        Wasu
+    </author>
+
+    <!--
+        If you do not want any permissions to be added to your app, add the
+        following tag to your config.xml; you will still have the INTERNET
+        permission on your app, which PhoneGap requires.
+    -->
+    <preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <!--
+        Define a specific version of PhoneGap to build into your app.
+        <preference name="phonegap-version"       value="3.5.0" />
+    -->
+
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-battery-status" />
+    <plugin name="cordova-plugin-camera" />
+    <plugin name="cordova-plugin-media-capture" />
+    <plugin name="cordova-plugin-console" />
+    <plugin name="cordova-plugin-contacts" />
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-device-motion" />
+    <plugin name="cordova-plugin-device-orientation" />
+    <plugin name="cordova-plugin-dialogs" />
+    <plugin name="cordova-plugin-file" />
+    <plugin name="cordova-plugin-file-transfer" />
+    <plugin name="cordova-plugin-geolocation" />
+    <plugin name="cordova-plugin-globalization" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-media" />
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-vibration" />
+
+    <!-- Third party plugins -->
+    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <!--
+        <plugin name="com.phonegap.plugins.barcodescanner" />
+    -->
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+    </gap:config-file>
+
+    <!--
+        Define access to external domains.
+
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+
+        Otherwise, you can specify specific domains:
+
+        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
+        <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
+        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+    -->
+
+    <access origin="*"/>
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+</widget>
